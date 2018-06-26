@@ -623,3 +623,47 @@ function twentytwelve_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentytwelve_widget_tag_cloud_args' );
+
+
+
+//personal code
+//création de région
+
+register_sidebar(
+		array(
+			'name'          => 'Région du gauche',
+			'id'            => 'region_du_gauche',
+			'description'   => 'Région du haut servant principalement pour le logo',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+register_sidebar(
+		array(
+			'name'          => 'Région du droite',
+			'id'            => 'region_du_droite',
+			'description'   => 'Région du haut servant principalement pour le logo',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+register_sidebar(
+		array(
+			'name'          => 'left sidebar',
+			'id'            => 'left_sidebar',
+			'description'   => 'sidebar',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+
+
